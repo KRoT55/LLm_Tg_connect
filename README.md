@@ -1,52 +1,33 @@
-Добавлены три бесплатные модели:
+Added three free models:
 
-Ollama - локальный сервер для запуска моделей (требует установки на ваш сервер):
+Ollama - local server for running models (requires installation on your server):
 
-Llama 2 - универсальная модель с хорошим балансом производительности
-Mistral - более новая и эффективная модель
+Llama 2 - universal model with a good balance of performance Mistral - a newer and more efficient model
 
+Hugging Face - API with free limitations:
 
-Hugging Face - API с бесплатными ограничениями:
+Uses the Mistral-7B-Instruct model
 
-Используется модель Mistral-7B-Instruct
+Google Gemini (former PaLM):
 
+Has a free usage tier
 
-Google Gemini (бывший PaLM):
+Additional improvements:
 
-Имеет бесплатный уровень использования
+Per-user model selection:
 
+Added /model command to select a preferred model The choice is saved in the database
 
+Advanced bot commands:
 
-Дополнительные улучшения:
+/start - initial greeting /clear - clear chat history /help - help on commands
 
-Выбор модели для каждого пользователя:
+Improved interface:
 
-Добавлена команда /model для выбора предпочитаемой модели
-Выбор сохраняется в базе данных
+Buttons for selecting a model
 
+To use the code you need to:
 
-Расширенные команды бота:
+Install Ollama on your server for local models (https://ollama.ai/) Get a free Hugging Face API key (https://huggingface.co/settings/tokens) Get a free Google Gemini API key (https://ai.google.dev/) Add these keys to your .env file: CopyHUGGINGFACE_API_KEY=your_key GOOGLE_AI_API_KEY=your_key OLLAMA_HOST=http://localhost:11434 # or your Ollama server URL
 
-/start - начальное приветствие
-/clear - очистка истории чата
-/help - справка по командам
-
-
-Улучшенный интерфейс:
-
-Кнопки для выбора модели
-
-
-
-Для использования кода вам нужно:
-
-Установить Ollama на ваш сервер для локальных моделей (https://ollama.ai/)
-Получить бесплатный API ключ Hugging Face (https://huggingface.co/settings/tokens)
-Получить бесплатный API ключ Google Gemini (https://ai.google.dev/)
-Добавить эти ключи в .env файл:
-CopyHUGGINGFACE_API_KEY=ваш_ключ
-GOOGLE_AI_API_KEY=ваш_ключ
-OLLAMA_HOST=http://localhost:11434  # или URL вашего сервера Ollama
-
-
-Вся остальная логика работы бота (платежи, ограничения запросов, история чата) сохранена как в оригинальном коде.RetryClaude does not have the ability to run the code it generates yet. Claude does not have internet access. Links provided may not be accurate or up to date.
+All other bot logic (payments, request limits, chat history) is preserved as in the original code. RetryClaude does not have the ability to run the code it generates yet. Claude does not have internet access. Links provided may not be accurate or up to date.
