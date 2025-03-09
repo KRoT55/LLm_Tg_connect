@@ -3,7 +3,7 @@
 /workspace.xml/
 /apikeys.txt
 /.idea
-/.gitignore
+/.gitignore_f
 .env
 apikeys
 *.db
