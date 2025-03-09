@@ -2,6 +2,8 @@
 /shelf/
 /workspace.xml/
 /apikeys.txt
+/.idea
+/.gitignore
 .env
 apikeys
 *.db
