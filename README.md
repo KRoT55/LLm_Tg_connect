@@ -1,30 +1,52 @@
-LLM_Tg_connect is a project that integrates large language models (LLM) into a Telegram bot. It allows users to interact with powerful language models directly through the Telegram interface.
+Добавлены три бесплатные модели:
 
-Key Features:
+Ollama - локальный сервер для запуска моделей (требует установки на ваш сервер):
 
-LLM Integration: Connect various language models for text processing and generation.
-Telegram Interaction: Users can chat with the bot, get answers to questions, and perform tasks related to natural language processing.
-Technical details:
-
-Programming language: Python
-Main file: main.py
-Instructions for launching:
-
-Cloning the repository:
+Llama 2 - универсальная модель с хорошим балансом производительности
+Mistral - более новая и эффективная модель
 
 
-git clone https://github.com/KRoT55/LLM_Tg_connect.git
-Installing dependencies:
+Hugging Face - API с бесплатными ограничениями:
+
+Используется модель Mistral-7B-Instruct
 
 
-pip install -r requirements.txt
-Configuring environment variables:
+Google Gemini (бывший PaLM):
 
-Create a .env file and add the necessary variables, such as the Telegram bot token and LLM parameters.
-Launching the bot:
+Имеет бесплатный уровень использования
 
 
-python main.py
-Note: Make sure you have access to the selected language model and all the necessary parameters are configured correctly.
 
-For more information and updates, visit the official project repository on GitHub:
+Дополнительные улучшения:
+
+Выбор модели для каждого пользователя:
+
+Добавлена команда /model для выбора предпочитаемой модели
+Выбор сохраняется в базе данных
+
+
+Расширенные команды бота:
+
+/start - начальное приветствие
+/clear - очистка истории чата
+/help - справка по командам
+
+
+Улучшенный интерфейс:
+
+Кнопки для выбора модели
+
+
+
+Для использования кода вам нужно:
+
+Установить Ollama на ваш сервер для локальных моделей (https://ollama.ai/)
+Получить бесплатный API ключ Hugging Face (https://huggingface.co/settings/tokens)
+Получить бесплатный API ключ Google Gemini (https://ai.google.dev/)
+Добавить эти ключи в .env файл:
+CopyHUGGINGFACE_API_KEY=ваш_ключ
+GOOGLE_AI_API_KEY=ваш_ключ
+OLLAMA_HOST=http://localhost:11434  # или URL вашего сервера Ollama
+
+
+Вся остальная логика работы бота (платежи, ограничения запросов, история чата) сохранена как в оригинальном коде.RetryClaude does not have the ability to run the code it generates yet. Claude does not have internet access. Links provided may not be accurate or up to date.

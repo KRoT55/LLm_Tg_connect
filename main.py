@@ -5,8 +5,9 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 
 # 🔹 Вставь свои ключи
-API_TOKEN =
-OPENAI_API_KEY = 
+API_TOKEN = ""
+OPENAI_API_KEY = ""
+
 
 # 🔹 Инициализация бота и OpenAI клиента
 bot = Bot(token=API_TOKEN)
