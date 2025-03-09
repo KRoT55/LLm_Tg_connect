@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml/
+/apikeys.txt
+.env
+apikeys
+*.db
+*.mp4
+*.wav
+*.ogg
